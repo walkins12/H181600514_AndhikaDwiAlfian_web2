@@ -39,6 +39,30 @@
                             </div>
                         </div>
 
+
+
+                               <div class="form-group row">
+                            <label for="contact" class="col-md-4 col-form-label text-md-right">{{ __('Contact') }}</label>
+
+                            <div class="col-md-6">
+                                <input id="contact" type="text" class="form-control @error('contact') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="contact" autofocus>
+
+                                @error('contact')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+
+                            <div class="form-group row ">    
+                        <label for="Kategori" class="col-md-4 col-form-label text-md-right">kategori</label>
+                        
+                        <div class="col-md-6">
+                        <select required="required" class="form-control form-control-sm" id="kategori" name="kategori"><option selected="selected" value=""></select>
+                        </div>
+                        </div>
+
                         <div class="form-group row">
                             <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
 
@@ -60,6 +84,9 @@
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
                             </div>
                         </div>
+
+
+                        
 
                          <div class="form-group {{$errors->has('captcha')?'has-error' :''}}">
                             <label for="captcha" class="col-md4 control-label">Captcha</label>
@@ -94,21 +121,5 @@
     </div>
 </div>
 
-<script  src="https://code.jquery.com/jquery-3.4.1.js"  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="  crossorigin="anonymous"></script>
-
-<script>
-
-    
-    $('.btn-refresh').click(function(){
-    $.ajax({
-        type : 'GET',
-        url: '{{url('/refresh_captcha')}}',
-        success : function (data){
-       
-            $('.captcha span').html(data.captcha);
-        }
-    })
-})
-</script>
 
 @endsection
