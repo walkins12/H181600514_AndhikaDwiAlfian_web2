@@ -11,8 +11,8 @@
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
 
-                        <div class="form-group row">
-                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
+                       <div class="form-group row">
+                            <label for="contact" class="col-md-4 col-form-label text-md-right">{{ ('Name') }}</label>
 
                             <div class="col-md-6">
                                 <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
@@ -39,13 +39,11 @@
                             </div>
                         </div>
 
-
-
-                               <div class="form-group row">
-                            <label for="contact" class="col-md-4 col-form-label text-md-right">{{ __('Contact') }}</label>
+                                          <div class="form-group row">
+                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Contact') }}</label>
 
                             <div class="col-md-6">
-                                <input id="contact" type="text" class="form-control @error('contact') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="contact" autofocus>
+                                <input id="contact" type="text" class="form-control @error('contact') is-invalid @enderror" name="contact" value="{{ old('contact') }}" required autocomplete="contact" autofocus>
 
                                 @error('contact')
                                     <span class="invalid-feedback" role="alert">
@@ -55,13 +53,20 @@
                             </div>
                         </div>
 
-                            <div class="form-group row ">    
+                              
+                              
+                              
+                              
+                              
+                                             <div class="form-group row ">    
                         <label for="Kategori" class="col-md-4 col-form-label text-md-right">kategori</label>
                         
                         <div class="col-md-6">
-                        <select required="required" class="form-control form-control-sm" id="kategori" name="kategori"><option selected="selected" value=""></select>
+                        <select required="required" class="form-control form-control-sm" id="kategori" name="kategori"><option selected="selected" value=""<option value="1"></option><option value="2">-</option><option value="3">Dosen</option><option value="4">Mahasiswa</option>></select>
                         </div>
                         </div>
+
+                            
 
                         <div class="form-group row">
                             <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
