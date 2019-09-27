@@ -12,7 +12,7 @@
                         @csrf
 
                        <div class="form-group row">
-                            <label for="contact" class="col-md-4 col-form-label text-md-right">{{ ('Name') }}</label>
+                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ ('Name') }}</label>
 
                             <div class="col-md-6">
                                 <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
@@ -40,12 +40,12 @@
                         </div>
 
                                           <div class="form-group row">
-                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Contact') }}</label>
+                            <label for="kontak" class="col-md-4 col-form-label text-md-right">{{ __('kotank') }}</label>
 
                             <div class="col-md-6">
-                                <input id="contact" type="text" class="form-control @error('contact') is-invalid @enderror" name="contact" value="{{ old('contact') }}" required autocomplete="contact" autofocus>
+                                <input id="kontak" type="text" class="form-control @error('kontak') is-invalid @enderror" name="kontak" value="{{ old('kontak') }}" required autocomplete="kontak" autofocus>
 
-                                @error('contact')
+                                @error('kontak')
                                     <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
