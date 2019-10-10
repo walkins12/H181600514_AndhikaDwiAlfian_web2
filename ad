@@ -1,0 +1,27 @@
+[33mcommit 285b0f269131f6ad697f7d1f503d15d1e8f7dc24[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/dika[m[33m, [m[1;32mdika[m[33m)[m
+Author: andreyanm <dn.andreyan@gmail.com>
+Date:   Fri Sep 27 23:57:58 2019 +0800
+
+    tugas selesaiiiii
+
+ create mode 100644 app/Http/Controllers/KategoriArtikelController.php
+ create mode 100644 app/KategoriArtikel.php
+ create mode 100644 database/migrations/2019_09_25_012800_create_kategori_artikel_table.php
+ create mode 100644 database/migrations/2019_09_25_012800_create_kategori_berita_table.php
+ create mode 100644 database/migrations/2019_09_25_012800_create_kategori_galeri_table.php
+ create mode 100644 database/migrations/2019_09_25_012800_create_kategori_pengumuman_table.php
+ create mode 100644 database/migrations/2019_09_25_012801_create_artikel_table.php
+ create mode 100644 database/migrations/2019_09_25_012801_create_berita_table.php
+ create mode 100644 database/migrations/2019_09_25_012801_create_galeri_table.php
+ create mode 100644 database/migrations/2019_09_25_012801_create_pengumuman_table.php
+ create mode 100644 database/migrations/2019_09_25_012802_add_foreign_keys_to_artikel_table.php
+ create mode 100644 database/migrations/2019_09_25_012802_add_foreign_keys_to_berita_table.php
+ create mode 100644 database/migrations/2019_09_25_012802_add_foreign_keys_to_galeri_table.php
+ create mode 100644 database/migrations/2019_09_25_012802_add_foreign_keys_to_kategori_artikel_table.php
+ create mode 100644 database/migrations/2019_09_25_012802_add_foreign_keys_to_kategori_berita_table.php
+ create mode 100644 database/migrations/2019_09_25_012802_add_foreign_keys_to_kategori_galeri_table.php
+ create mode 100644 database/migrations/2019_09_25_012802_add_foreign_keys_to_kategori_pengumuman_table.php
+ create mode 100644 database/migrations/2019_09_25_012802_add_foreign_keys_to_pengumuman_table.php
+ create mode 100644 database/migrations/2019_09_27_110825_add_kontak_in_users.php
+ create mode 100644 resources/views/kategori_artikel/index.blade.php
+ create mode 100644 resources/views/kategori_artikel/show.blade.php

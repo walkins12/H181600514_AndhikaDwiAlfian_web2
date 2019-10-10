@@ -5,8 +5,8 @@
         <div class="col-md-8">
             <div class="card">
           
-                <div class="card-header">List Kategori Artikel</div>
-                <a href = "{!! route('kategori_artikel.create') !!}" class="btn btn-success">Tambah Data</a>
+                <div class="card-header">List Kategori Galeri</div>
+                <a href = "{!! route('kategori_galeri.create') !!}" class="btn btn-success">Tambah Data</a>
                 <table border="1">
         <tr>
         <td>ID</td>
@@ -16,7 +16,7 @@
         <td>Aksi</td>
         </tr>
 
-        @foreach($listKategoriArtikel as $item)
+        @foreach($listKategoriGaleri as $item)
         <tr>
         <td>{!! $item->id !!}</td>
         <td>{!! $item->nama !!}</td>
@@ -25,7 +25,7 @@
        
        
         <td>
-        <a href="{!! route('kategori_artikel.show',[$item->id]) !!} " class="btn btn-primary " >
+        <a href="{!! route('kategori_galeri.show',[$item->id]) !!} " class="btn btn-primary " >
         
         Lihat
         </a>    
