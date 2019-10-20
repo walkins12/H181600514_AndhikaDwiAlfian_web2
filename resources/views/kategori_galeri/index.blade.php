@@ -13,6 +13,7 @@
         <td>nama</td>
         <td>Users</td>
         <td>Create</td>
+        <td>Update</td>
         <td>Aksi</td>
         </tr>
 
@@ -22,6 +23,7 @@
         <td>{!! $item->nama !!}</td>
         <td>{!! $item->users_id !!}</td>
         <td>{!! $item->created_at->format('d/m/y H:i:s') !!}</td>
+        <td>{!! $item->updated_at->format('d/m/y H:i:s') !!}</<td>
        
        
         <td>
@@ -29,6 +31,14 @@
         
         Lihat
         </a>    
+
+          <a href="{!! route('kategori_galeri.edit',[$item->id]) !!} " class="btn btn-primary " >
+        
+        Ubah
+        </a> 
+        {!! Form::open(['route' => ['kategori_galeri.destroy', $item->id], 'method'=>'delete']) !!}
+        {!! Form::submit('Hapus',['class'=>'btn  btn-danger']); !!}
+        {!! Form::close() !!}
         </td>
         </tr>
         @endforeach

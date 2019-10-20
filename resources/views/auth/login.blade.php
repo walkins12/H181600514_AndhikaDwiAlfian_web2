@@ -53,9 +53,9 @@
 
 
                         <div class="form-group {{$errors->has('captcha')?'has-error' :''}}">
-                            <label for="captcha" class="col-md4 control-label">Captcha</label>
+                            <label for="captcha" class="col-md-4 col-form-label text-md-right">Captcha</label>
 
-                            <div class="col-md-6">
+                            <div class="col-md-6 offset-md-4">
                                 <div class="captcha">
                                 <span>{!! captcha_img('flat') !!} </span>
                                 <button type="button" class="btn btn-success btn-refresh">Refresh</button>

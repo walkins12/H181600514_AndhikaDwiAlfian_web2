@@ -34,7 +34,7 @@
 
                        <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
-                                <a href="{!! route('kategori_artikel.index') !!}" class="btn btn-primary">
+                                <a href="{!! route('kategori_pengumuman.index') !!}" class="btn btn-primary">
                                     Back
                                 </a>
 
@@ -43,3 +43,5 @@
         </div>
     </div>
 </div>
+
+@endsection

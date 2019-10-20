@@ -35,4 +35,36 @@ public function store(request $request){
     
     return redirect(route('kategori_pengumuman.index'));
 }
+
+public function edit($id){
+    $kategoriPengumuman=KategoriPengumuman::find($id);
+       
+
+    if (empty($kategoriGaleri)){
+        return redirect(route('kategori_pengumuman.index'));
+    }
+
+    return view('kategori_pengumuman.edit',compact('kategoriPengumuman'));
+}
+public function update($id, Request $request){
+    $kategoriPengumuman=KategoriPengumuman::find($id);
+    $input= $request->all();
+    if (empty($kategoriGaleri)){
+        return redirect(route('kategori_pengumuman.index'));
+    
+}
+$kategoriGaleri->update($input);
+return redirect(route('kategori_pengumuman.index'));
+}
+public function destroy($id){
+    $KategoriPengumuman=KategoriPengumuman::find($id);
+       
+
+    if (empty($KategoriPengumuman)){
+        return redirect(route('kategori_pengumuman.index'));
+    }
+    $KategoriPengumuman->delete();
+    return redirect(route('kategori_pengumuman.index'));
+}
+
 }

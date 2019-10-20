@@ -47,6 +47,10 @@
                                 <a class="dropdown-item" href="{{ route('kategori_galeri.index') }}">{{ __('Kategori Galeri') }}</a>
                                 <a class="dropdown-item" href="{{ route('kategori_berita.index') }}">{{ __('Kategori Berita') }}</a>
                                 <a class="dropdown-item" href="{{ route('kategori_pengumuman.index') }}">{{ __('Kategori Pengumuman') }}</a>
+                                <a class="dropdown-item" href="{{ route('artikel.index') }}">{{ __('artikel') }}</a>
+                                <a class="dropdown-item" href="{{ route('galeri.index') }}">{{ __('galeri') }}</a>
+                                <a class="dropdown-item" href="{{ route('berita.index') }}">{{ __('berita') }}</a>
+                                <a class="dropdown-item" href="{{ route('pengumuman.index') }}">{{ __('pengumuman') }}</a>
                                    </div>
                                    </li>
 
