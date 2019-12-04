@@ -11,9 +11,10 @@
          <table border="1">
         <tr>
         <td>ID</td>
-        <td>nama</td>
-        <td>keterangan</td>
+        <td>Nama</td>
         <td>path</td>
+        <td>keterangan</td>
+        <td>Kategori Id</td>
         <td>user </td>
         <td>Create</td>
         <td>Update</td>
@@ -24,13 +25,15 @@
         <tr>
         <td>{!! $item->id !!}</td>
         <td>{!! $item->nama !!}</td>
+        <td><img src="{!! asset ($item->path) !!}"width="100px" ></td>
         <td>{!! $item->keterangan !!}</td>
-        <td>{!! $item->path !!}</td>
+        <td>{!! $item->kategori_galeri_id !!}</td>
         <td>{!! $item->users_id !!}</td>
         <td>{!! $item->created_at->format('d/m/y H:i:s') !!}</td>
         <td>{!! $item->updated_at->format('d/m/y H:i:s') !!}</td>
        
        <td>
+       
        <a href="{!! route('galeri.show',[$item->id]) !!} " class="btn btn-primary " >
        
        Lihat

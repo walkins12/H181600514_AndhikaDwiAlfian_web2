@@ -8,7 +8,7 @@
                 <div class="card-header">Tambah Galeri</div>
 
                 <div class="card-body">
-                    {!! Form::open(['route' => 'galeri.store', 'method' => 'post']) !!}
+                    {!! Form::open(['route' => 'galeri.store', 'files' =>true]) !!}
                         @include('galeri.form')
                     {!! Form::close() !!}
                 </div>
@@ -21,10 +21,10 @@
 @section('scripts')
     <script src="https://cdn.ckeditor.com/4.13.0/full/ckeditor.js"></script>
 
-    <script>
+    <!-- <script>
         $(document).ready(function() {
             CKEDITOR.replace( 'keterangan' );
         });
     </script>
-   
+    -->
 @endsection
